@@ -10,11 +10,11 @@ object tom {
     }
 
     method correr(distancia) {
-      energia -= distancia / 2
+      energia = energia - distancia / 2
     }
 
     method velocidadMaxima() {
-      return 5 + energia/10
+      return 5 + energia /10
     }
 
     method estaFeliz() {
@@ -28,9 +28,8 @@ object jerry {
       return edad * 20
     }
     method cumplirAnios() {
-      edad += 1
+      edad = edad + 1
     }
-
 
 }
 

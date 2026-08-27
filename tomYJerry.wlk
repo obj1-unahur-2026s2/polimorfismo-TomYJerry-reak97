@@ -20,6 +20,17 @@ object tom {
     method estaFeliz() {
       return energia > 50
     }
+
+    method puedeCazar(metros) {
+      return energia >= metros / 2
+    }
+
+    method cazar(metros,unRaton) {
+      if(self.puedeCazar(metros)) {
+        self.correr(metros)
+        self.comer(unRaton)
+      }
+    }
 }
 
 object jerry {

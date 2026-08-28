@@ -51,5 +51,13 @@ object nibbles {
 }
 
 object perez {
+  var dientesGuardados= 10
+  
+  method peso() {
+    return 40 + dientesGuardados * 0.5
+  }
 
+  method recogerDientes(cantidadDeDientes) {
+    dientesGuardados= dientesGuardados + cantidadDeDientes
+  }
 }

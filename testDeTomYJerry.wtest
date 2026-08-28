@@ -25,4 +25,13 @@ describe "test del ejercicio de tom y jerry" {
         tom.correr(24)
         assert.equals(14,tom.velocidadMaxima())
     }
+
+    test "Peso inicial de Perez es 45, con 10 dientes guardados" {
+      assert.equals(45, perez.peso())
+    }
+
+    test "Perez recoge 10 dientes, ahora su peso es 50 " {
+      perez.recogerDientes(10)
+      assert.equals(50, perez.peso())
+    }
 }
